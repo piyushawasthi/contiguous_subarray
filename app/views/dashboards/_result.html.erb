@@ -1,0 +1,8 @@
+<div class="result">
+	<p><strong>Input Array: <%= @input_array.join(', ') %></strong></p>
+	<p><strong>Largest SubArray</strong></p>
+	<p><strong>Start Index: </strong><%= @largest[:start] %></p>
+	<p><strong>Length: </strong><%= @input_array[@largest[:start]..@largest[:end]].length %></p>
+	<p><strong>Sum: </strong><%= @largest[:sum] %></p>
+	<p><strong>Elements: </strong><%= @input_array[@largest[:start]..@largest[:end]].join(' ') %></p>
+</div>

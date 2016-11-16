@@ -1,0 +1,5 @@
+<%= form_tag("/get_array", method: "get") do %>
+  <%= label_tag(:input_array, "Enter Array:") %>
+  <%= text_field_tag(:input_array, nil, placeholder: 'Input like:  -2, 1, -3, 4, -1, 2, 1, -5, 4') %>
+  <%= submit_tag("Generate") %>
+<% end %>
